@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatMap - Descubre la Música</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/beta.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="bm-topbar">
+    <div class="bm-container">
+
+        <a href="index.html" class="bm-brand">
+            <img src="images/Banner.png" alt="BeatMap" />
+        </a>
+
+        <nav class="bm-menu d-none d-lg-flex">
+            <a href="index.html" class="bm-link">Inicio</a>
+            <a href="index.html#abouts" class="bm-link">¿Quiénes Somos?</a>
+            <a href="equipo.html" class="bm-link">Nuestro Equipo</a>
+            <a href="beta.html" class="bm-link active">Beta</a>
+        </nav>
+
+        <div class="bm-right d-none d-lg-flex">
+            <button class="bm-flag">
+                <img src="https://flagcdn.com/16x12/cl.png" alt="Chile" /><span>Chile</span><span class="caret"></span>
+            </button>
+            <a href="login.html" class="bm-btn btn-dark">Iniciar sesión</a>
+            <a href="register.html" class="bm-btn btn-light">Registrate</a>
+        </div>
+
+        <button class="bm-toggle d-lg-none" id="bmToggle" aria-label="Menú">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+
+    <div class="bm-dropdown" id="bmDropdown">
+        <nav class="bm-menu">
+            <a href="index.html" class="bm-link">Inicio</a>
+            <a href="index.html#abouts" class="bm-link">¿Quiénes Somos?</a>
+            <a href="equipo.html" class="bm-link">Nuestro Equipo</a>
+            <a href="beta.html" class="bm-link active">Beta</a>
+        </nav>
+        <div class="bm-right">
+            <button class="bm-flag">
+                <img src="https://flagcdn.com/16x12/cl.png" alt="Chile" /><span>Chile</span><span class="caret"></span>
+            </button>
+            <a href="login.html" class="bm-btn btn-dark">Iniciar sesión</a>
+            <a href="register.html" class="bm-btn btn-light">Registrate</a>
+        </div>
+    </div>
+</header>
+
+<section id="beta" class="beta-section fade-in">
+    <div class="beta-header text-center">
+        <img src="images/Banner.png" alt="BeatMap" class="beta-logo"/>
+        <h1>¡Únete a nuestra Beta exclusiva!</h1>
+        <p>
+            Ayúdanos a pulir BeatMap con tu feedback. Completa este breve formulario
+            y sé de los primeros en probar nuestras novedades.
+        </p>
+    </div>
+
+    <div class="beta-form-outer">
+        <iframe
+                src="https://forms.office.com/Pages/ResponsePage.aspx?id=dlZiAicyCkScaLttKd5CBuAivjUH7vRHjBndFs7a3BxUN1lNWUc3NkZaOTdKUkVYQUpLWUlISEw4RC4u&embed=true"
+                frameborder="0"
+                marginwidth="0"
+                marginheight="0"
+                style="border:none; width:100%; max-width:800px; height:80vh;"
+                allowfullscreen
+                webkitallowfullscreen
+                mozallowfullscreen
+                msallowfullscreen>
+        </iframe>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <!-- Columna Izquierda -->
+        <div class="footer-col footer-about">
+            <img src="images/Banner.png" alt="BeatMap" class="footer-logo" />
+            <p class="footer-desc">
+                Plataforma digital que conecta a músicos emergentes con productores,
+                sellos discográficos y organizadores de eventos, facilitando el ingreso
+                profesional al mundo de la música.
+            </p>
+            <div class="footer-social">
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/company/beatmap/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/beatmap.cl/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:contacto.beatmap@gmail.com" aria-label="Correo">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-col footer-links">
+            <h4>Enlaces</h4>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#modules">Características</a></li>
+                <li><a href="index.html#abouts">¿Quiénes Somos?</a></li>
+                <li><a href="equipo.html">Nuestro Equipo</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col footer-newsletter">
+            <h4>Mantente informado</h4>
+            <p>Suscríbete para recibir actualizaciones sobre consejos y lanzamientos.</p>
+            <form action="#" class="newsletter-form">
+                <input type="email" placeholder="Tu e-mail" required />
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <small>© 2025 BeatMap – Un puente entre tu arte y el mundo</small>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts/navbar.js"></script>
+
+</body>
+</html>
